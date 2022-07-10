@@ -1,0 +1,20 @@
+.container {
+    box-shadow: var(--frame-shadow);
+    background-color: var(--primary-bg);
+}
+
+.content {
+    max-width: 355px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+
+    padding: 0 10px;
+}
+
+.description {
+    margin-top: 35px;
+    margin-bottom: 0;
+    text-align: center;
+}

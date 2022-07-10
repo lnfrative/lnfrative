@@ -1,0 +1,12 @@
+.container {
+    height: 100px;
+    width: 100px;
+
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.image {
+    object-fit: contain;
+    object-position: center;
+}

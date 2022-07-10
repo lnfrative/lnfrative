@@ -1,0 +1,33 @@
+.container {
+    padding: 0 10px;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.linkContainer {
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: var(--font-size-xs);
+
+    border: solid 1px var(--frames-color);
+    margin: 0 auto 20px auto;
+    max-width: 600px;
+    box-shadow: var(--frame-shadow);
+    background-color: var(--primary-bg);
+
+    width: 100%;
+
+    cursor: pointer;
+}
+
+.linkContainer:hover {
+    opacity: 80%;
+}
