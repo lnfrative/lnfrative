@@ -5,9 +5,9 @@ import styles from "./index.module.css"
 function Linktree() {
     return (
         <div className={styles.container}>
-            <a href="/resume" className={styles.linkContainer}>
-                Resume
-            </a>
+            <Link href="/resume">
+                <span className={styles.linkContainer}>Resume</span>
+            </Link>
             <a href="https://www.youtube.com/channel/UCGCS2ZCnAKraBHda3UyGUCQ/playlists?view=1&sort=lad&flow=grid" className={styles.linkContainer}>
                 Song lists
             </a>
