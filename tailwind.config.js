@@ -31,7 +31,7 @@ module.exports = {
         light: 'rgba(248,249,250,1)',
         dark: '#343a40',
       },
-      black: 'rgba(3,37,41, 1)',
+      black: "#000",
       white: '#FFF',
     }
   },
