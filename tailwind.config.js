@@ -6,6 +6,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    backgroundImage: {
+      'hero-cover': "url('../images/hero_cover.jpg')",
+    },
     extend: {
       colors: {
         primary: {

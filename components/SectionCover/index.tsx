@@ -1,15 +1,18 @@
-import React from 'react'
-import cover from "../../images/hero_cover.jpg";
+import React, {useEffect, useRef} from 'react'
+import { startScrollObserver } from './module';
 
 function SectionCover() {
+    const coverRef = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        startScrollObserver(coverRef)
+    }, [])
+
     return (
         <section id="cover" className="min-h-screen relative">
             <div
-                style={{
-                    // TODO: Remove hardcoded
-                    backgroundImage: `url(${cover.src})`,
-                }}
-                className="min-h-[inherit] bg-fixed bg-cover bg-no-repeat bg-center absolute top-0 left-0 h-full w-full"
+                ref={coverRef}
+                className="min-h-[inherit] bg-hero-cover bg-fixed bg-cover bg-no-repeat bg-center absolute top-0 left-0 h-full w-full"
             ></div>
             <div
                 className="absolute top-0 left-0 w-full h-full bg-black opacity-60"
