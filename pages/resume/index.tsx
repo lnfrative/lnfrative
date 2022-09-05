@@ -8,7 +8,7 @@ const Resume: NextPage = () => {
     return (
         <main>
             <Header />
-            <section className="min-h-screen relative">
+            <section id="cover" className="min-h-screen relative">
                 <div
                     style={{
                         // TODO: Remove hardcoded
