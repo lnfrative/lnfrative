@@ -6,7 +6,7 @@ import className from 'classnames'
 
 function Header() {
     const { ref, inView } = useInView({
-        rootMargin: '300px'
+        rootMargin: '100px'
     })
     return (
         <header ref={ref} className="transition-all ease-in delay-500">
