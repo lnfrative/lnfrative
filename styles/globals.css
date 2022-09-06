@@ -10,7 +10,7 @@ body {
   @apply bg-paper-light dark:bg-paper-dark;
   padding: 0;
   margin: 0;
-  letter-spacing: 2px;
+  /*letter-spacing: 2px;*/
 }
 
 a {

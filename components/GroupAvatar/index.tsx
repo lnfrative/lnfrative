@@ -3,10 +3,10 @@ import Logo from "../Logo"
 
 function GroupAvatar() {
     return (
-        <div className="text-white">
+        <div className="text-white text-center">
             <Logo />
-            <p className="mt-3 text-3xl text-center font-extrabold">Christopher Díaz</p>
-            <p className="mt-1 text-2xl text-center">@infrative</p>
+            <p className="mt-5 text-2xl font-medium">Christopher Díaz</p>
+            <p className="mt-1 text-xl">@infrative</p>
         </div>
     )
 }
