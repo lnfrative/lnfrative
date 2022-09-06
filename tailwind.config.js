@@ -42,10 +42,11 @@ module.exports = {
         white: '#FFF',
       },
       animation: {
-        slideDown: 'slideDown 0.7s'
+        'slide-down': 'slide-down 0.7s',
+        'typed-blink': 'typed-blink 0.7s infinite',
       },
       keyframes: {
-        slideDown: {
+        'slide-down': {
           '0%': {
             opacity: 0,
             transform: 'translateY(-100%)',
@@ -54,6 +55,17 @@ module.exports = {
             opacity: 1,
             transform: 'translateY(0)',
           }
+        },
+        'typed-blink': {
+          '0%': {
+            opacity: 1,
+          },
+          '50%': {
+            opacity: 0,
+          },
+          '100%': {
+            opacity: 1,
+          },
         }
       }
     },

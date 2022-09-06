@@ -3,6 +3,7 @@ import { startScrollObserver } from './module';
 
 // components
 import GroupAvatar from '../GroupAvatar'
+import Typewriter from "../Typewriter";
 
 function SectionCover() {
     const coverRef = useRef<HTMLDivElement>(null)
@@ -23,7 +24,18 @@ function SectionCover() {
             <div className="relative pt-20 pb-20 z-20 min-h-screen flex">
                 <div className="m-auto text-center">
                     <GroupAvatar />
-                    <h2 className="text-6xl mt-10 mb-10 text-white font-semibold">I&apos;m a Developer</h2>
+                    <h2 className="text-6xl mt-10 mb-10 text-white font-semibold">
+                        <Typewriter
+                            titles={[
+                                "I'm a Developer",
+                                "MariaDB > MySQL",
+                                "I'm a Freelancer",
+                                "I love Node.js",
+                                "I'm a Junior DevOps",
+                                "TS > JS",
+                            ]}
+                        />
+                    </h2>
                     <p className="text-2xl text-white font-medium">based in Guayaquil, Ecuador.</p>
                 </div>
             </div>

@@ -15,7 +15,7 @@ function Header() {
                 'w-full z-30 text-white',
                 {
                     ['absolute']: inView,
-                    ['fixed animate-slideDown bg-black']: !inView,
+                    ['fixed animate-slide-down bg-black']: !inView,
                 },
             )}>
                 <div className="flex items-center justify-between px-3">
