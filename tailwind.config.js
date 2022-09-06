@@ -6,6 +6,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ['Poppins', '-apple-system', 'BlinkMacSystemFont', 'Roboto', 'Oxygen', 'sans-serif'],
+    },
     backgroundImage: {
       'hero-cover': "url('../images/hero_cover.jpg')",
     },
