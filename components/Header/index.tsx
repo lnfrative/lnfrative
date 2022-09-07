@@ -1,11 +1,13 @@
 import React from 'react'
 import Image from "next/image"
-import logoLight from "../../images/logo_light.svg"
+import logoLight from '../../images/logo_light.svg'
 import { useInView } from 'react-intersection-observer'
 import className from 'classnames'
 import { GitHub, Twitter, Facebook, YouTube } from '@mui/icons-material'
+import useScreenStore from '../../hooks/useScreenStore'
 
 function Header() {
+    const screen = useScreenStore()
     const { ref, inView } = useInView({
         rootMargin: '100px'
     })
@@ -26,22 +28,58 @@ function Header() {
                     <div className="w-8/12 hidden items-center justify-center xl:flex">
                         <ul className="flex">
                             <li>
-                                <a href="#cover" className="p-5 flex justify-center items-center">Cover</a>
+                                <a
+                                    className={className('p-5 flex justify-center items-center', {
+                                        ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 0
+                                    })}
+                                >
+                                    Cover
+                                </a>
                             </li>
                             <li>
-                                <a href="#personal" className="p-5 flex justify-center items-center">Personal</a>
+                                <a
+                                    className={className('p-5 flex justify-center items-center', {
+                                        ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 1
+                                    })}
+                                >
+                                    Personal
+                                </a>
                             </li>
                             <li>
-                                <a href="#services" className="p-5 flex justify-center items-center">Services</a>
+                                <a
+                                    className={className('p-5 flex justify-center items-center', {
+                                        ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 2
+                                    })}
+                                >
+                                    Services
+                                </a>
                             </li>
                             <li>
-                                <a href="#resume" className="p-5 flex justify-center items-center">Resume</a>
+                                <a
+                                    className={className('p-5 flex justify-center items-center', {
+                                        ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 3
+                                    })}
+                                >
+                                    Resume
+                                </a>
                             </li>
                             <li>
-                                <a href="#portfolio" className="p-5 flex justify-center items-center">Portfolio</a>
+                                <a
+                                    className={className('p-5 flex justify-center items-center', {
+                                        ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 4
+                                    })}
+                                >
+                                    Portfolio
+                                </a>
                             </li>
                             <li>
-                                <a href="#hire" className="p-5 flex justify-center items-center">Hire me</a>
+                                <a
+                                    className={className('p-5 flex justify-center items-center', {
+                                        ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 5
+                                    })}
+                                >
+                                    Hire me
+                                </a>
                             </li>
                         </ul>
                     </div>
