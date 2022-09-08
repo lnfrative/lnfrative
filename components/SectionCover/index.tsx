@@ -1,19 +1,32 @@
 import React, {useEffect, useRef} from 'react'
-import { startScrollObserver } from './module';
+import { useInView } from "react-intersection-observer"
+import useStoreDispatch from "../../hooks/useStoreDispatch"
+import { setSectionInView } from "../../store/screen"
+import { startScrollObserver } from "./module"
 
 // components
 import GroupAvatar from '../GroupAvatar'
 import Typewriter from "../Typewriter";
 
 function SectionCover() {
+    const dispatch = useStoreDispatch()
+    const { ref, inView } = useInView({
+        threshold: 0.75
+    })
     const coverRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
         startScrollObserver(coverRef)
     }, [])
 
+    useEffect(() => {
+        if (inView) {
+            dispatch(setSectionInView(0))
+        }
+    }, [inView])
+
     return (
-        <section id="cover" className="min-h-screen relative">
+        <section ref={ref} id="cover" className="min-h-screen relative">
             <div
                 className="absolute z-10 top-0 left-0 w-full h-full bg-black opacity-60"
             ></div>
@@ -35,7 +48,7 @@ function SectionCover() {
                                 "I love Node.js",
                                 "I'm a Junior DevOps",
                                 "TS > JS",
-                                "Tailwind Lover"
+                                "Tailwind Lover",
                             ]}
                         />
                     </h2>
