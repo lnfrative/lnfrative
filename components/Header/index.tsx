@@ -87,7 +87,7 @@ function Header() {
                     <div className="w-2/12 flex justify-end">
                         <ul className="flex">
                             <li className="p-5">
-                                <a rel="noreferrer" target="_blank" href="https://github.com/lnfrative">
+                                <a rel="noreferrer" target="_blank" href="https://github.com/lnfrative/lnfrative">
                                     <GitHub />
                                 </a>
                             </li>

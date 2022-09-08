@@ -40,6 +40,10 @@ module.exports = {
         },
         black: "#000",
         white: '#FFF',
+        'attenuated-thin': {
+          light: '#dee3e4',
+          dark: 'rgba(108, 117, 125, 0.4)'
+        }
       },
       animation: {
         'slide-down': 'slide-down 0.7s',
