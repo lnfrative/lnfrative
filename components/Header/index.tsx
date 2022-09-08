@@ -11,6 +11,8 @@ function Header() {
     const { ref, inView } = useInView({
         rootMargin: '100px'
     })
+
+    console.log(screen.sectionInView)
     return (
         <header ref={ref} className="transition-all ease-in delay-500">
             <nav className={className(

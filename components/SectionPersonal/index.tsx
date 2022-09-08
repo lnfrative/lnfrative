@@ -8,7 +8,7 @@ function SectionPersonal() {
     const age = useMemo(() => (moment().diff("1998-11-21", "years").toString()), [])
 
     return (
-        <Section id="personal">
+        <Section index={1} id="personal">
             <TitleOverlay primary="About me" secondary="Personal" />
             <div className="mt-20 flex">
                 <div className="text-content-light dark:text-content-dark flex-1 mr-20">
