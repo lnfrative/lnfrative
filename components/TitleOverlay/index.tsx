@@ -1,10 +1,6 @@
 import React from "react"
 import className from "classnames"
-
-interface TitleOverlayProps {
-    primary: string,
-    secondary: string,
-}
+import TitleOverlayProps from "../../interfaces/TitleOverlayProps"
 
 function TitleOverlay(props: TitleOverlayProps) {
     return (
