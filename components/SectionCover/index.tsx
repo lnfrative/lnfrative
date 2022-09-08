@@ -29,10 +29,13 @@ function SectionCover() {
                             titles={[
                                 "I'm a Developer",
                                 "MariaDB > MySQL",
+                                "NoSQL ~ SQL",
                                 "I'm a Freelancer",
+                                "GraphQL > REST",
                                 "I love Node.js",
                                 "I'm a Junior DevOps",
                                 "TS > JS",
+                                "Tailwind Lover"
                             ]}
                         />
                     </h2>
