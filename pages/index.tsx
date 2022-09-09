@@ -1,28 +1,20 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-
-// page
-import Resume from "./resume"
 
 // components
-import Bio from "../components/Bio"
-import Linktree from "../components/Linktree"
+import Header from "../components/Header"
+import SectionCover from "../components/SectionCover"
+import SectionPersonal from "../components/SectionPersonal"
+import SectionServices from "../components/SectionServices"
 
-import styles from '../styles/Home.module.css'
+const Home: NextPage = () => {
+    return (
+        <main>
+            <Header />
+            <SectionCover />
+            <SectionPersonal />
+            <SectionServices />
+        </main>
+    )
+}
 
-// TODO: Redesign linktree.
-// const Home: NextPage = () => {
-//   return (
-//     <div className={styles.container}>
-//         <Head>
-//             <title>Infrative | Linktree</title>
-//             <meta name="description" content="Computer science student and software developer." />
-//             <link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg" />
-//         </Head>
-//         <Bio />
-//         <Linktree />
-//     </div>
-//   )
-// }
-
-export default Resume
+export default Home
