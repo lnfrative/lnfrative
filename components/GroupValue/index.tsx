@@ -1,7 +1,9 @@
-import React from "react"
+import React, { useMemo } from "react"
 import GroupValueProps from "../../interfaces/GroupValueProps"
+import numberFormatter from "../../helpers/numberFormatter"
 
 function GroupValue(props: GroupValueProps) {
+    const formattedValue = useMemo(() => numberFormatter(props.value, 0, " "), [props.value])
     return (
         <div
             className="text-center"
@@ -9,7 +11,7 @@ function GroupValue(props: GroupValueProps) {
             <div
                 className="text-5xl font-medium text-attenuated-light dark:text-attenuated-dark"
             >
-                <span>{props.value}</span>
+                <span>{formattedValue.integer}</span>
                 <span>{props.sign}</span>
             </div>
 
