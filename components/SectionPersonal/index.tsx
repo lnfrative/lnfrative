@@ -3,9 +3,16 @@ import moment from "moment"
 import TitleOverlay from "../TitleOverlay"
 import Section from "../Section"
 import ListDescription from "../ListDescription"
+import ListGroupValue from "../ListGroupValue"
+
+const AVERAGE_CODE_LINES_PER_MONTH = 1950
 
 function SectionPersonal() {
-    const age = useMemo(() => (moment().diff("1998-11-21", "years").toString()), [])
+    const { age, exp, codeLines } = useMemo(() => ({
+        age: moment().diff("1998-11-21", "years").toString(),
+        exp: moment().diff("2020-03-10", "years"),
+        codeLines: moment().diff("2020-03-10", "months") * AVERAGE_CODE_LINES_PER_MONTH
+    }), [])
 
     return (
         <Section index={1} id="personal">
@@ -35,6 +42,15 @@ function SectionPersonal() {
                         ]}
                     />
                 </div>
+            </div>
+            <div className="mt-20">
+                <ListGroupValue
+                    groupValues={[
+                        { title: "Years Experience", value: exp, sign: "+" },
+                        { title: "Lines of Code", value: codeLines, sign: "+" },
+                        { title: "Projects Worked", value: 4 },
+                    ]}
+                />
             </div>
          </Section>
     )
