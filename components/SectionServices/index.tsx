@@ -26,8 +26,8 @@ function SectionServices() {
                         <div className="mt-20" />
 
                         <GroupDescription
-                            title="Frontend Development"
-                            description="Building and maintaining scalable web applications using development frameworks with a strong focus on components as pieces of constituent code."
+                            title="Server Maintenance"
+                            description="Installation and maintenance of the necessary services to successfully run and serve applications, such as DB, HTTP server, containerization through Docker."
                             imageElement={(
                                 <div className="text-primary-light dark:text-primary-dark text-5xl">
                                     <Web color="inherit" fontSize="inherit" />
@@ -38,8 +38,8 @@ function SectionServices() {
 
                     <div className="flex-1">
                         <GroupDescription
-                            title="Frontend Development"
-                            description="Building and maintaining scalable web applications using development frameworks with a strong focus on components as pieces of constituent code."
+                            title="Continuous Integration"
+                            description="Creation of CI/CD pipelines using Jenkins and GitHub Actions for rapid software deployment and upgrades to both production and development environments."
                             imageElement={(
                                 <div className="text-primary-light dark:text-primary-dark text-5xl">
                                     <Web color="inherit" fontSize="inherit" />
@@ -50,8 +50,8 @@ function SectionServices() {
                         <div className="mt-20" />
 
                         <GroupDescription
-                            title="Frontend Development"
-                            description="Building and maintaining scalable web applications using development frameworks with a strong focus on components as pieces of constituent code."
+                            title="Backend Development"
+                            description="REST API development, database management through ORM using Laravel, Symfony or AdonisJS for NodeJS environments."
                             imageElement={(
                                 <div className="text-primary-light dark:text-primary-dark text-5xl">
                                     <Web color="inherit" fontSize="inherit" />
