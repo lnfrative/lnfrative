@@ -1,0 +1,74 @@
+import React from "react"
+import Section from "../Section"
+import TitleOverlay from "../TitleOverlay"
+import GroupSummary from "../GroupSummary"
+
+function SectionSummary() {
+    return (
+        <Section id="summary" index={3}>
+            <TitleOverlay primary="Resume" secondary="Summary" />
+
+            <div className="flex mt-20">
+                <div className="flex-1 mr-10">
+                    <h3 className="font-semibold text-2xl mb-10 text-content-light dark:text-content-dark">My education</h3>
+
+                    <GroupSummary
+                        period="2022 - present"
+                        entity="ESPOL"
+                        title="Computer Engineering"
+                        description="I enrolled in college out of a personal interest in economics and to understand how the world works. I got a solid foundation in both mathematics and economic theory."
+                    />
+
+                    <div className="mt-10" />
+
+                    <GroupSummary
+                        period="2019 - 2020"
+                        entity="ESPOL"
+                        title="Degree in Mathematics"
+                        description="I enrolled in college out of a personal interest in economics and to understand how the world works. I got a solid foundation in both mathematics and economic theory."
+                    />
+
+                    <div className="mt-10" />
+
+                    <GroupSummary
+                        period="2018 - 2019"
+                        entity="ESPOL"
+                        title="Degree in Economy"
+                        description="I enrolled in college out of a personal interest in economics and to understand how the world works. I got a solid foundation in both mathematics and economic theory."
+                    />
+                </div>
+
+                <div className="flex-1">
+                    <h3 className="font-semibold text-2xl mb-10 text-content-light dark:text-content-dark">My experience</h3>
+
+                    <GroupSummary
+                        period="2021 - 2022"
+                        entity="Dogecash LLC"
+                        title="Frontend & DevOps Engineer"
+                        description="I developed the web application of the company's main service and multiple sites, using React and NextJS. I was in charge of the administration of the servers and the maintenance of the CI/CD processes using Jenkins and GitHub Actions and Docker. I had extensive experience in managing NodeJS applications served with PM2 served through proxy with Nginx. I gained experience creating highly available databases with replicate slaves with MySQL, MariaDB and MongoDB."
+                    />
+
+                    <div className="mt-10" />
+
+                    <GroupSummary
+                        period="2020 - 2021"
+                        entity="Attach"
+                        title="React Frontend Developer"
+                        description="Frontend developer based entirely on React. I was in charge of making the design implementations and the connections with the API of the service."
+                    />
+
+                    <div className="mt-10" />
+
+                    <GroupSummary
+                        period="2020 - 2020"
+                        entity="OhPlay"
+                        title="Fullstack Developer"
+                        description="I was in charge of the frontend development of the web application and the API Rest backend development. I made several implementations with third-party APIs, such as BunnyCDN for file hosting and I developed a video processor with JavaFX and FFmpeg to make them compatible with HLS. I made preparations to develop the mobile application of the service with Flutter."
+                    />
+                </div>
+            </div>
+        </Section>
+    )
+}
+
+export default SectionSummary
