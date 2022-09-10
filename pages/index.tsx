@@ -6,6 +6,7 @@ import SectionCover from "../components/SectionCover"
 import SectionPersonal from "../components/SectionPersonal"
 import SectionServices from "../components/SectionServices"
 import SectionSummary from "../components/SectionSummary"
+import SectionPortfolio from "../components/SectionPortfolio"
 
 const Home: NextPage = () => {
     return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
             <SectionPersonal />
             <SectionServices />
             <SectionSummary />
+            <SectionPortfolio />
         </main>
     )
 }
