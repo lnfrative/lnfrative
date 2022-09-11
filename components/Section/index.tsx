@@ -7,7 +7,7 @@ import { setSectionInView } from "../../store/screen"
 function Section(props: PropsWithChildren<SectionProps>) {
     const dispatch = useStoreDispatch()
     const { ref, inView } = useInView({
-        threshold: 0.5
+        threshold: 0.4
     })
 
     useEffect(() => {
