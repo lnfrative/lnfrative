@@ -17,7 +17,7 @@ function SectionSummary() {
                         period="2022 - present"
                         entity="ESPOL"
                         title="Computer Engineering"
-                        description="I enrolled in college out of a personal interest in economics and to understand how the world works. I got a solid foundation in both mathematics and economic theory."
+                        description="Finally I decided to study the vocation to which I have dedicated myself professionally."
                     />
 
                     <div className="mt-10" />
@@ -26,7 +26,7 @@ function SectionSummary() {
                         period="2019 - 2020"
                         entity="ESPOL"
                         title="Degree in Mathematics"
-                        description="I enrolled in college out of a personal interest in economics and to understand how the world works. I got a solid foundation in both mathematics and economic theory."
+                        description="In my short time as a math student I was instructed in discrete analysis, multivariable calculus, differential equations, and mathematical reasoning."
                     />
 
                     <div className="mt-10" />
