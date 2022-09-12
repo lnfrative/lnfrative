@@ -3,7 +3,7 @@ import Section from "../Section"
 import TitleOverlay from "../TitleOverlay"
 import GroupDescription from "../GroupDescription"
 
-import { Web } from "@mui/icons-material"
+import { Web, ManageHistory, Storage, Code } from "@mui/icons-material"
 
 function SectionServices() {
     return (
@@ -30,7 +30,7 @@ function SectionServices() {
                             description="Installation and maintenance of the necessary services to successfully run and serve applications, such as DB, HTTP server, containerization through Docker."
                             imageElement={(
                                 <div className="text-primary-light dark:text-primary-dark text-5xl">
-                                    <Web color="inherit" fontSize="inherit" />
+                                    <Storage color="inherit" fontSize="inherit" />
                                 </div>
                             )}
                         />
@@ -42,7 +42,7 @@ function SectionServices() {
                             description="Creation of CI/CD pipelines using Jenkins and GitHub Actions for rapid software deployment and upgrades to both production and development environments."
                             imageElement={(
                                 <div className="text-primary-light dark:text-primary-dark text-5xl">
-                                    <Web color="inherit" fontSize="inherit" />
+                                    <ManageHistory color="inherit" fontSize="inherit" />
                                 </div>
                             )}
                         />
@@ -54,7 +54,7 @@ function SectionServices() {
                             description="REST API development, database management through ORM using Laravel, Symfony or AdonisJS for NodeJS environments."
                             imageElement={(
                                 <div className="text-primary-light dark:text-primary-dark text-5xl">
-                                    <Web color="inherit" fontSize="inherit" />
+                                    <Code color="inherit" fontSize="inherit" />
                                 </div>
                             )}
                         />
