@@ -11,6 +11,7 @@ module.exports = {
     },
     backgroundImage: {
       'hero-cover': "url('../images/hero_cover.jpg')",
+      'sun-cover': "url('../images/cover.jpeg')",
     },
     extend: {
       colors: {

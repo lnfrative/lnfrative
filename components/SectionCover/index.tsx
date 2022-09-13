@@ -32,7 +32,7 @@ function SectionCover() {
             ></div>
             <div
                 ref={coverRef}
-                className="min-h-[inherit] z-0 bg-hero-cover bg-fixed bg-cover bg-center bg-no-repeat absolute top-0 left-0 h-full w-full"
+                className="min-h-[inherit] z-0 bg-sun-cover bg-fixed bg-cover bg-no-repeat absolute top-0 left-0 h-full w-full"
             ></div>
             <div className="relative pt-20 pb-20 z-20 min-h-screen flex">
                 <div className="m-auto text-center">
