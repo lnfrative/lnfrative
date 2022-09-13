@@ -72,15 +72,6 @@ function Header() {
                                     Portfolio
                                 </a>
                             </li>
-                            <li>
-                                <a
-                                    className={className('p-5 flex justify-center items-center', {
-                                        ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 5
-                                    })}
-                                >
-                                    Hire me
-                                </a>
-                            </li>
                         </ul>
                     </div>
 
