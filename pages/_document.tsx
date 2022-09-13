@@ -4,9 +4,7 @@ export default class MyDocument extends Document {
     render() {
         return (
             <Html>
-                <Head>
-                    <title>Infrative</title>
-                </Head>
+                <Head />
                 <body>
                     <div id="overlay" />
                     <Main />
