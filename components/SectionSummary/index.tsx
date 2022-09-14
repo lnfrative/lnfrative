@@ -1,4 +1,5 @@
 import React from "react"
+import className from "classnames"
 import Section from "../Section"
 import TitleOverlay from "../TitleOverlay"
 import GroupSummary from "../GroupSummary"
@@ -9,8 +10,14 @@ function SectionSummary() {
         <Section id="summary" index={3}>
             <TitleOverlay primary="Resume" secondary="Summary" />
 
-            <div className="flex mt-20">
-                <div className="flex-1 mr-10">
+            <div className={className(
+                "flex mt-20 flex-col",
+                "lg:flex-row"
+            )}>
+                <div className={className(
+                    "flex-1 mb-20",
+                    "lg:mr-10 lg:mb-0"
+                )}>
                     <h3 className="font-semibold text-2xl mb-10 text-content-light dark:text-content-dark">My education</h3>
 
                     <GroupSummary
@@ -72,7 +79,10 @@ function SectionSummary() {
             <div className="mt-20">
                 <h3 className="font-semibold text-2xl mb-10 text-content-light dark:text-content-dark">My Skills</h3>
 
-                <div className="grid grid-cols-2 gap-10">
+                <div className={className(
+                    "grid grid-cols-1 gap-10",
+                    "md:grid-cols-2"
+                )}>
                     <Ability title="HTML" value={95} />
                     <Ability title="CSS" value={90} />
                     <Ability title="JS & TS" value={95} />

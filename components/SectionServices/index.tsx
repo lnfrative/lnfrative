@@ -1,4 +1,5 @@
 import React from "react"
+import className from "classnames"
 import Section from "../Section"
 import TitleOverlay from "../TitleOverlay"
 import GroupDescription from "../GroupDescription"
@@ -11,8 +12,14 @@ function SectionServices() {
             <Section index={2} id="services">
                 <TitleOverlay primary="What I do?" secondary="Services" />
 
-                <div className="flex mt-20">
-                    <div className="flex-1 mr-20">
+                <div className={className(
+                    "flex mt-20 flex-col",
+                    "lg:flex-row"
+                )}>
+                    <div className={className(
+                        "flex-1",
+                        "lg:mr-20"
+                    )}>
                         <GroupDescription
                             title="Frontend Development"
                             description="Building and maintaining scalable web applications using development frameworks with a strong focus on components as pieces of constituent code."
@@ -36,7 +43,10 @@ function SectionServices() {
                         />
                     </div>
 
-                    <div className="flex-1">
+                    <div className={className(
+                        "flex-1 mt-20",
+                        "lg:mt-0"
+                    )}>
                         <GroupDescription
                             title="Continuous Integration"
                             description="Creation of CI/CD pipelines using Jenkins and GitHub Actions for rapid software deployment and upgrades to both production and development environments."

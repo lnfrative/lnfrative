@@ -17,7 +17,7 @@ function Section(props: PropsWithChildren<SectionProps>) {
     }, [inView])
 
     return (
-        <section ref={ref} id={props.id} className="flex justify-center pt-20 pb-20">
+        <section ref={ref} id={props.id} className="flex justify-center pt-20 pb-20 pl-5 pr-5">
             <div className="max-w-screen-xl flex-1">
                 { props.children }
             </div>
