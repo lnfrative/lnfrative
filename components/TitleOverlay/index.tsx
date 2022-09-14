@@ -10,7 +10,9 @@ function TitleOverlay(props: TitleOverlayProps) {
             <h2 className={
                 className(
                     "text-attenuated-light dark:text-attenuated-dark",
-                    "text-9xl font-semibold opacity-10 text-center"
+                    "text-7xl font-semibold opacity-10 text-center",
+                    "lg:text-9xl"
+
                 )
             }>
                 {props.secondary.toUpperCase()}
