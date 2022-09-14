@@ -11,7 +11,7 @@ import ohplayPlatform from "../../images/portfolio/ohplay/ohplay.png"
 function SectionPortfolio() {
     return (
         <div className="bg-neutral-light dark:bg-neutral-dark">
-            <Section id="Portfolio" index={4}>
+            <Section id="portfolio" index={4}>
                 <TitleOverlay primary="My work" secondary="Portfolio" />
                 <div className="mt-20">
                     <Gallery

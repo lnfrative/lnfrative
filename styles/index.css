@@ -6,7 +6,7 @@
 
 html,
 body {
-  @apply bg-paper-light dark:bg-paper-dark;
+  @apply dark:bg-paper-dark;
   padding: 0;
   margin: 0;
 }
@@ -14,6 +14,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  @apply cursor-pointer hover:text-primary-light hover:dark:text-primary-dark;
 }
 
 * {

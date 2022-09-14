@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react"
 import Image from "next/image"
-import logoLight from '../../images/logo_light.svg'
-import { useInView } from 'react-intersection-observer'
-import className from 'classnames'
-import { GitHub, Twitter, Facebook, YouTube } from '@mui/icons-material'
-import useScreenStore from '../../hooks/useScreenStore'
+import logoLight from "../../images/logo_light.svg"
+import { useInView } from "react-intersection-observer"
+import className from "classnames"
+import { GitHub, Twitter, Facebook, YouTube } from "@mui/icons-material"
+import useScreenStore from "../../hooks/useScreenStore"
+import { moveScroll } from "./module"
 
 function Header() {
     const screen = useScreenStore()
@@ -29,15 +30,17 @@ function Header() {
                         <ul className="flex">
                             <li>
                                 <a
+                                    onClick={moveScroll("cover")}
                                     className={className('p-5 flex justify-center items-center', {
                                         ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 0
                                     })}
                                 >
-                                    Cover
+                                    Me
                                 </a>
                             </li>
                             <li>
                                 <a
+                                    onClick={moveScroll("personal")}
                                     className={className('p-5 flex justify-center items-center', {
                                         ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 1
                                     })}
@@ -47,6 +50,7 @@ function Header() {
                             </li>
                             <li>
                                 <a
+                                    onClick={moveScroll("services")}
                                     className={className('p-5 flex justify-center items-center', {
                                         ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 2
                                     })}
@@ -56,6 +60,7 @@ function Header() {
                             </li>
                             <li>
                                 <a
+                                    onClick={moveScroll("summary")}
                                     className={className('p-5 flex justify-center items-center', {
                                         ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 3
                                     })}
@@ -65,6 +70,7 @@ function Header() {
                             </li>
                             <li>
                                 <a
+                                    onClick={moveScroll("portfolio")}
                                     className={className('p-5 flex justify-center items-center', {
                                         ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 4
                                     })}
