@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next"
 
 // components
 import Header from "../components/Header"
@@ -8,7 +8,7 @@ import SectionServices from "../components/SectionServices"
 import SectionSummary from "../components/SectionSummary"
 import SectionPortfolio from "../components/SectionPortfolio"
 import Footer from "../components/Footer"
-import Head from "next/head";
+import Head from "next/head"
 
 const Home: NextPage = () => {
     return (
