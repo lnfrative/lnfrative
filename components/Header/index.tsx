@@ -22,9 +22,9 @@ function Header() {
                 },
             )}>
                 <div className="flex items-center justify-between px-3">
-                    <div className="w-2/12">
-                        <Image src={logoLight}></Image>
-                    </div>
+                    <h1 className="w-2/12">
+                        <Image src={logoLight} alt="infrative"></Image>
+                    </h1>
 
                     <div className="w-8/12 hidden items-center justify-center xl:flex">
                         <ul className="flex">
