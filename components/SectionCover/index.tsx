@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer"
 import useStoreDispatch from "../../hooks/useStoreDispatch"
 import { setSectionInView } from "../../store/screen"
 import { startScrollObserver } from "./module"
+import cover from "../../images/cover.jpeg"
 
 // components
 import GroupAvatar from '../GroupAvatar'
@@ -32,7 +33,10 @@ function SectionCover() {
             ></div>
             <div
                 ref={coverRef}
-                className="min-h-[inherit] z-0 bg-sun-cover bg-fixed bg-cover bg-no-repeat absolute top-0 left-0 h-full w-full"
+                style={{
+                    backgroundImage: `url(${cover.src})`
+                }}
+                className="min-h-[inherit] z-0 bg-fixed bg-cover bg-no-repeat absolute top-0 left-0 h-full w-full"
             ></div>
             <div className="relative pt-20 pb-20 z-20 min-h-screen flex">
                 <div className="m-auto text-center">
