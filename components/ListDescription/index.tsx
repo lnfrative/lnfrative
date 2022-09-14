@@ -9,7 +9,8 @@ function ListDescription(props: ListDescriptionProps) {
                 <div
                     key={title}
                     className={className(
-                        "text-content-light dark:text-content-dark text-lg pt-3 pb-3",
+                        "text-content-light dark:text-content-dark text-lg pt-3 pb-3 flex justify-between",
+                        "lg:block",
                         {
                             ["border-b border-attenuated-thin-light dark:border-attenuated-thin-dark"]: i !== props.descriptions.length - 1
                         }

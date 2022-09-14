@@ -1,4 +1,5 @@
 import React, {useMemo} from "react"
+import className from "classnames"
 import moment from "moment"
 import TitleOverlay from "../TitleOverlay"
 import Section from "../Section"
@@ -17,8 +18,14 @@ function SectionPersonal() {
     return (
         <Section index={1} id="personal">
             <TitleOverlay primary="About me" secondary="Personal" />
-            <div className="mt-20 flex">
-                <div className="text-content-light dark:text-content-dark flex-1 mr-20">
+            <div className={className(
+                "mt-20 flex flex-col text-center items-center",
+                "lg:flex-row lg:text-left lg:items-start"
+            )}>
+                <div className={className(
+                    "text-content-light dark:text-content-dark flex-1 mb-20",
+                    "lg:mr-20 lg:mb-0"
+                )}>
                     <h3
                         className="font-semibold text-2xl mb-4"
                     >
@@ -32,7 +39,10 @@ function SectionPersonal() {
                     </div>
                 </div>
 
-                <div className="min-w-[390px]">
+                <div className={className(
+                    "min-w-[390px] w-full",
+                    "lg:w-auto"
+                )}>
                     <ListDescription
                         descriptions={[
                             { title: "Name", description: "Christopher Díaz" },
