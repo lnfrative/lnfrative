@@ -15,7 +15,7 @@ function Header() {
     return (
         <header ref={ref} className="transition-all ease-in delay-500">
             <nav className={className(
-                'w-full z-30 text-white',
+                'w-full z-30 text-white pl-5 pr-5',
                 {
                     ['absolute']: inView,
                     ['fixed animate-slide-down bg-black']: !inView,
