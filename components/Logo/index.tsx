@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import avatar from '../../images/avatar.jpg'
+import avatar from '../../images/avatar_navidad.jpg'
 
 function Logo() {
     return (
