@@ -31,7 +31,7 @@ function Header() {
                             <li>
                                 <a
                                     onClick={moveScroll("cover")}
-                                    className={className('p-5 flex justify-center items-center transition-colors ease-in', {
+                                    className={className('p-5 flex justify-center items-center', {
                                         ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 0
                                     })}
                                 >
@@ -41,7 +41,7 @@ function Header() {
                             <li>
                                 <a
                                     onClick={moveScroll("personal")}
-                                    className={className('p-5 flex justify-center items-center transition-colors ease-in', {
+                                    className={className('p-5 flex justify-center items-center', {
                                         ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 1
                                     })}
                                 >
@@ -51,7 +51,7 @@ function Header() {
                             <li>
                                 <a
                                     onClick={moveScroll("services")}
-                                    className={className('p-5 flex justify-center items-center transition-colors ease-in', {
+                                    className={className('p-5 flex justify-center items-center', {
                                         ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 2
                                     })}
                                 >
@@ -61,7 +61,7 @@ function Header() {
                             <li>
                                 <a
                                     onClick={moveScroll("summary")}
-                                    className={className('p-5 flex justify-center items-center transition-colors ease-in', {
+                                    className={className('p-5 flex justify-center items-center', {
                                         ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 3
                                     })}
                                 >
@@ -71,7 +71,7 @@ function Header() {
                             <li>
                                 <a
                                     onClick={moveScroll("portfolio")}
-                                    className={className('p-5 flex justify-center items-center transition-colors ease-in', {
+                                    className={className('p-5 flex justify-center items-center', {
                                         ['text-primary-light :dark:text-primary-dark']: screen.sectionInView === 4
                                     })}
                                 >

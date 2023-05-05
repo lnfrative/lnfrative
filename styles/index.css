@@ -13,6 +13,7 @@ a {
   color: inherit;
   text-decoration: none;
   @apply cursor-pointer hover:text-primary-light hover:dark:text-primary-dark;
+  @apply transition-colors ease-in;
 }
 
 * {
