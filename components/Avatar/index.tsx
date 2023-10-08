@@ -26,7 +26,7 @@ function Avatar() {
                 hover:opacity-80 hover:cursor-pointer transition-all ease-in active:opacity-100
             "
         >
-            <Image className="object-contain object-center" src={ImageAvatar} alt="Avatar" />
+            <Image priority src={ImageAvatar} alt="Avatar" />
         </div>
     )
 }
