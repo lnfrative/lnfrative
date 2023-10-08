@@ -3,7 +3,6 @@ import className from "classnames"
 import Section from "../Section"
 import TitleOverlay from "../TitleOverlay"
 import GroupSummary from "../GroupSummary"
-import Ability from "../Ability"
 
 function SectionSummary() {
     return (
