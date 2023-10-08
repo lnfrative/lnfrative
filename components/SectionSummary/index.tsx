@@ -75,33 +75,6 @@ function SectionSummary() {
                     />
                 </div>
             </div>
-
-            <div className="mt-20">
-                <h3 className="font-semibold text-2xl mb-10 text-content-light dark:text-content-dark">My Skills</h3>
-
-                <div className={className(
-                    "grid grid-cols-1 gap-10",
-                    "md:grid-cols-2"
-                )}>
-                    <Ability title="HTML" value={95} />
-                    <Ability title="CSS" value={90} />
-                    <Ability title="JS & TS" value={95} />
-                    <Ability title="React.js" value={95} />
-                    <Ability title="Vue" value={60} />
-                    <Ability title="PHP" value={70} />
-                    <Ability title="Prisma" value={80} />
-                    <Ability title="Nginx" value={70} />
-                    <Ability title="Flutter" value={55} />
-                    <Ability title="Python" value={75} />
-                    <Ability title="Angular" value={55} />
-                    <Ability title="Docker & Compose" value={65} />
-                    <Ability title="Kubernetes" value={10} />
-                    <Ability title="Laravel" value={80} />
-                    <Ability title="AdonisJS" value={75} />
-                    <Ability title="Java" value={60} />
-                    <Ability title="Jenkins" value={55} />
-                </div>
-            </div>
         </Section>
     )
 }
