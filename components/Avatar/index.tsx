@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ImageAvatar from '../../images/avatar.jpg'
+import ImageAvatar from '../../images/avatar.webp'
 
 function Avatar() {
     return (
@@ -10,7 +10,7 @@ function Avatar() {
                 hover:opacity-80 hover:cursor-pointer transition-all ease-in active:opacity-100
             "
         >
-            <Image priority src={ImageAvatar} alt="Avatar" />
+            <Image unoptimized={true} priority={true} src={ImageAvatar} alt="Infrative" />
         </div>
     )
 }
