@@ -1,7 +1,11 @@
 import Image from 'next/image'
 import ImageAvatar from '../../images/avatar.webp'
+import ImageAvatarChristmas from '../../images/avatar_christmas.webp'
+import { useMemo } from 'react'
+import moment from 'moment'
 
 function Avatar() {
+    const currentMonth = useMemo(() => moment().month(), [])
     return (
         <div
             className="
@@ -10,7 +14,13 @@ function Avatar() {
                 hover:opacity-80 hover:cursor-pointer transition-all ease-in active:opacity-100
             "
         >
-            <Image unoptimized={true} priority={true} src={ImageAvatar} alt="Infrative" />
+            {currentMonth === 11 && (
+                <Image unoptimized={true} priority={true} src={ImageAvatarChristmas} alt="Infrative" />
+            )}
+            {currentMonth !== 11 && (
+                <Image unoptimized={true} priority={true} src={ImageAvatar} alt="Infrative" />
+            )}
+            
         </div>
     )
 }
